@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/fav.png">
+  <!-- Author Meta -->
+  <meta name="author" content="colorlib">
+  <!-- Meta Description -->
+  <meta name="description" content="">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>Embedded BI</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <!--
+			CSS
+			============================================= -->
+  <link rel="stylesheet" href="css/linearicons.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link type="text/css" rel="stylesheet" href="css/github-markdown.css">
+  <link type="text/css" rel="stylesheet" href="css/pilcrow.css">
+  <link type="text/css" rel="stylesheet" href="css/hljs-github.min.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="container main-menu">
+      <div class="row align-items-center justify-content-between d-flex">
+        <div id="logo">
+          <a href="http://github.com/mortie23"><img src="img/logo.png" alt="" title="" /></a>
+        </div>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="embedded-bi.html">Embedded BI</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      </div>
+    </div>
+  </header><!-- #header -->
+
+  <!-- start banner Area -->
+  <section class="about-banner">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="about-content col-lg-12">
+          <h1 class="text-white">
+            Embedded BI
+          </h1>
+          <p class="text-white link-nav"><a href="http://github.com/mortie23">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="embedded-bi.html.html"> Embedded BI Me</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End banner Area -->
+
+  <!-- Start home-about Area -->
+  <section class="home-about-area section-gap">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6 col-md-6 home-about-left">
+          <img class="img-fluid" src="img/embedded-bi.jpg" alt="">
+        </div>
+        <div class="col-lg-5 col-md-6 home-about-right">
+          <h6>Embedded BI</h6>
+          <h1 class="text-uppercase">What is it</h1>
+          <p>
+            When people talk about Embedded Business Intelligence (BI) they are usually refering to putting things such as interactive dashboards and/or analytics within another business application.
+            If that other business aplication is web based, and is customisable, then you might be able to acheive some of this yourself.
+          </p>
+        </div>
+        <div class="col-lg-12 pt-60">
+          <p>I spent some time researching the different tools that could be used so I thought I'd share my perspective.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End home-about Area -->
+
+  <!-- Start interests Area -->
+  <section class="testimonial-area section-gap">
+    <div class="container">
+      <h1 class="mb-10">A Sample of options</h1>
+      The two products I can demo free of charge on a public facing website without authentication are Tableau and Power BI.
+    </div>
+  </section>
+  <!-- End testimonial Area -->
+
+  <!-- Start tableau info -->
+  <section class="timeline section-gap">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="mb-10">Tableau</h1>
+      </div>
+      Tableau was my first choice as it is a product I have used before.
+      It has a free tier and is nice enough to allow you to pusblish content and embed it on other sites.</p>
+      You can sign up for an account here <a href="https://public.tableau.com/s/">https://public.tableau.com/s/</a>
+      <p><img src="img/tableau-sign-up.png" /></p>
+      Then you will need to download the Tableau Public Desktop application.
+    
+      <article class="markdown-body"><pre class="hljs"><code> <span class="hljs-comment">&lt;!-- Start Tableau Embed --&gt;</span> 
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"brands-area"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'tableauPlaceholder'</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'vizSOMEID'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'position: relative'</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">noscript</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">' '</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'https://public.tableau.com/static/images/nh/YOURDASHBOARDNAME/Dashboard1/1_rss.png'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'border: none'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">noscript</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">object</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'tableauViz'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'display:none;'</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'host_url'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'https%3A%2F%2Fpublic.tableau.com%2F'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'embed_code_version'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'3'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'site_root'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">''</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'name'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'YOURDASHBOARDNAME/Dashboard1'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'tabs'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'no'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'toolbar'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'yes'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'static_image'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'https://public.tableau.com/static/images/nh/YOURDASHBOARDNAME/Dashboard1/1.png'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'animate_transition'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'yes'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'display_static_image'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'yes'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'display_spinner'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'yes'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'display_overlay'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'yes'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'display_count'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'yes'</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">param</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'language'</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'en'</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">object</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- End Tableau Embed --&gt;</span></code></pre>    </article>
+
+      <p>You also get a script tab that you need to include in your site as well.</p>
+      <p>You can get the embed code from your dashboard by opening you dashboard from Tableau Public and clicking the share button on the bottom bar:</p>
+      <p><img src="img/tableau-share.png" /></p>
+    
+    </div>
+  </section>
+  <!-- End tableau info -->
+
+  <!-- Start Tableau Embed -->
+  <section class="brands-area">
+    <div class="container">
+      <div class='tableauPlaceholder' id='viz1604830089588' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt=' ' src='https://public.tableau.com/static/images/nh/nhwds-test/Dashboard1/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='nhwds-test/Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/nh/nhwds-test/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+        </object>
+      </div>
+    </div>
+  </section>
+  <!-- End Tableau Embed -->
+
+  <!-- Start Power BI info -->
+  <section class="timeline section-gap">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="mb-10">Power BI</h1>
+      </div>
+      Power BI was the other option that I thought would be a good one to demo.
+      It has a free tier, but it isn't made as easily accessible.</p>
+      You can sign up for an account here <a href="https://powerbi.microsoft.com/en-us/get-started/">https://powerbi.microsoft.com/en-us/get-started/</a>, but you'll need a corporate work email address (gmail, outlook etc won't cut it).<p>
+      <p><img src="img/power-bi-sign-up.png" /></p>
+      <p>
+        You'll also need to download the Power BI desktop application, I'd recommend getting this from the Microsoft Store (if you're using a Windows computer).
+      </p>
+      <article class="markdown-body">
+        <pre class="hljs"><code><span class="hljs-comment">&lt;!-- Start Power BI Embed --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"brands-area"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> 
+      <span class="hljs-attr">width</span>=<span class="hljs-string">"1000"</span> 
+      <span class="hljs-attr">height</span>=<span class="hljs-string">"625"</span> 
+      <span class="hljs-attr">src</span>=<span class="hljs-string">"https://app.powerbi.com/view?r=YOURAPPID"</span> 
+      <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span> 
+      <span class="hljs-attr">allowFullScreen</span>=<span class="hljs-string">"true"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- End Power BI Embed--&gt;</span></code></pre>
+      </article>
+      <p>You can get the embed code from your dashboard in the Power BI service (that is powerbi.com) by doing the following:</p>
+      <p><img src="img/power-bi-share.png" /></p>
+    </div>
+  </section>
+  <!-- End Power BI info -->
+
+  <!-- Start Power BI Embed -->
+  <section class="brands-area">
+    <div class="container">
+      <iframe width="1000" height="625" src="https://app.powerbi.com/view?r=eyJrIjoiM2MxOTk5MTYtZmYwMS00MWJjLWI3NzAtM2Q5ODBjMzRiYTZkIiwidCI6ImQ2M2U3OGJkLTllZTMtNGE3ZC1hODY4LTczODgyNGMxM2JkMSJ9" frameborder="0" allowFullScreen="true">
+      </iframe>
+    </div>
+  </section>
+  <!-- End Power BI Embed-->
+
+  <!-- Start interests Area -->
+  <section class="testimonial-area section-gap">
+    <div class="container">
+      <h3>Other products that get a mention</h3>
+      <p>
+      <ul>
+        <li>
+          <h4>Yellowfin</h4>
+        </li>
+        <li>
+          <h4>Qlik Sense</h4>
+        </li>
+        <li>
+          <h4>SAS Visual Analytics</h4>
+        </li>
+        <li>
+          <h4>Looker</h4>
+        </li>
+      </ul>
+      <br>
+      <p>I should also mention, that there are also a lot of open source and paid javascript charting and graphing frameworks that could be used to acheive the same thing.</p>
+      </p>
+      Wrapping it up, it's never been a better time to embed charts, dashboards and/or analytics into your business applicaiton or site.
+    </div>
+  </section>
+  <!-- End testimonial Area -->
+
+  <!-- End brands Area -->
+
+  <!-- start footer Area -->
+  <footer class="footer-area section-gap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h4>About Me</h4>
+            <p>
+              Passionate about technology.
+            </p>
+            <p class="footer-text">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+          <div class="single-footer-widget">
+            <h4>Follow Me</h4>
+            <p>Let us be social</p>
+            <div class="footer-social d-flex align-items-center">
+              <a href="http://twitter.com/mortie23"><i class="fa fa-twitter"></i></a>
+              <a href="http://github.com/mortie23"><i class="fa fa-github"></i></a>
+              <a href="http://youtube.com/mortie23"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer Area -->
+
+  <script src="js/vendor/jquery-2.2.4.min.js"></script>
+  <!--<script src="js/popper.min.js"></script>-->
+  <!--<script src="js/vendor/bootstrap.min.js"></script>-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/hoverIntent.js"></script>
+  <script src="js/superfish.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.tabs.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/simple-skillbar.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/main.js"></script>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1604830089588');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.minWidth = '420px';
+      vizElement.style.maxWidth = '650px';
+      vizElement.style.width = '100%';
+      vizElement.style.minHeight = '587px';
+      vizElement.style.maxHeight = '887px';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    }
+    else if (divElement.offsetWidth > 500) {
+      vizElement.style.minWidth = '420px';
+      vizElement.style.maxWidth = '650px';
+      vizElement.style.width = '100%';
+      vizElement.style.minHeight = '587px';
+      vizElement.style.maxHeight = '887px';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    }
+    else {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '1477px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+  </script>
+
+</body>
+
+</html>
