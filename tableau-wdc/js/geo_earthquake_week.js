@@ -43,16 +43,16 @@
   myConnector.getData = function (table, doneCallback) {
     loadJSON("geo_earthquake_week", function (resp) {
       var respJson = JSON.parse(resp);
-      var dataarray = respJson,
+      var dataarray = respJson.features,
         tableData = [];
 
       // Iterate over the JSON object
       for (var i = 0, len = dataarray.length; i < len; i++) {
         tableData.push({
-          ids: dataarray.features[i].properties.ids,
-          mag: dataarray.features[i].properties.mag,
-          title: dataarray.features[i].properties.title,
-          geometry: dataarray.features[i].geometry,
+          ids: dataarray[i].properties.ids,
+          mag: dataarray[i].properties.mag,
+          title: dataarray[i].properties.title,
+          geometry: dataarray[i].geometry,
         });
       }
 
