@@ -4,7 +4,7 @@
   myConnector.getSchema = function (schemaCallback) {
     var cols = [
       {
-        id: "ID",
+        id: "ids",
         alias: "ID",
         dataType: tableau.dataTypeEnum.string,
         columnRole: tableau.columnRoleEnum.dimension,
@@ -28,8 +28,6 @@
         id: "geometry",
         alias: "geometry",
         dataType: tableau.dataTypeEnum.geometry,
-        columnRole: tableau.columnRoleEnum.dimension,
-        columnType: tableau.columnTypeEnum.discrete,
       },
     ];
 
@@ -51,7 +49,7 @@
       // Iterate over the JSON object
       for (var i = 0, len = dataarray.length; i < len; i++) {
         tableData.push({
-          ID: dataarray.features[i].properties.ID,
+          ids: dataarray.features[i].properties.ids,
           mag: dataarray.features[i].properties.mag,
           title: dataarray.features[i].properties.title,
           geometry: dataarray.features[i].geometry,
