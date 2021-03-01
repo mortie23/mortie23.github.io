@@ -34,7 +34,7 @@
     ];
 
     var tableSchema = {
-      id: "geo_earthquake_4.5_week",
+      id: "geo_earthquake_week",
       alias: "GEO EarthQuake 4.5 week",
       columns: cols,
     };
@@ -43,7 +43,7 @@
   };
 
   myConnector.getData = function (table, doneCallback) {
-    loadJSON("geo_earthquake_4.5_week", function (resp) {
+    loadJSON("geo_earthquake_week", function (resp) {
       var respJson = JSON.parse(resp);
       var dataarray = respJson,
         tableData = [];
