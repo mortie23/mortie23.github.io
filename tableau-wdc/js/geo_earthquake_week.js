@@ -75,7 +75,7 @@ $(document).ready(function () {
 function loadJSON(path, cb) {
   var obj = new XMLHttpRequest();
   obj.overrideMimeType("application/json");
-  obj.open("GET", "../json/" + path + ".json", true);
+  obj.open("GET", "../json/" + path + "." + "geojson", true);
   obj.onreadystatechange = function () {
     if (obj.readyState == 4 && obj.status == "200") {
       console.log(obj.responseText);
